@@ -29,7 +29,7 @@ with col2:
 cols = st.columns(4)
 for i in range(len(cols)):
     with cols[i]:
-        st.write(f"for當中的按鈕{i+1}", key=f"多col{i+10}")
+        st.button(f"for當中的按鈕{i+1}", key=f"多col{i+10}")
 st.write("---")
 st.title("columns排列元素比較")
 (
@@ -65,6 +65,6 @@ if "ans1" not in st.session_state:
     st.session_state.ans1 = 1
 if st.button("按下去ans加1", key="ans2"):
     st.session_state.ans1 = st.session_state.ans1 + 1
-    st.write(f"ans={st.session_state.ans1}")
-    if st.button("重新整理", key="banana"):
-        st.rerun()
+st.write(f"ans={st.session_state.ans1}")
+if st.button("重新整理", key="banana"):
+    st.rerun()
