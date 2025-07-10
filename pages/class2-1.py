@@ -3,10 +3,10 @@ print(int(1.0))  # float轉int
 print(float(1))  # int轉float
 print(str(1))  # int轉str
 print(bool(1))  # int轉bool
-print(int("1.234"))  # str轉int
+print(int("1234"))  # str轉int
 print(float("1.234"))  # str轉float
 print(str(1.234))  # float轉str
-print(int("hello"))  # 這行會報錯誤,因為字串裡面如果有非數字的字元,無法轉換成數字
+# print(int("hello"))  # 這行會報錯誤,因為字串裡面如果有非數字的字元,無法轉換成數字
 # input()函式的使用
 input("請輸入一個數字")
 # input()是一個函式,它會在終端機要求使用者輸入一個數字,然後回傳該數字

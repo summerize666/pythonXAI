@@ -42,7 +42,7 @@ print(len(L))  # 6
 # 這兩種方式都可以，但是看使用的情境是否會需要 index 來決定要用哪一種方式
 
 L = [1, 2, 3, "a", "b", "c"]
-for i in range(0, len(L), 2):
+for i in range(len(L)):
     print(L[i])
 
 for i in L:

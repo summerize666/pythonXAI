@@ -12,5 +12,5 @@ for f in files:  # ['class1.md', 'class2.md']逐一讀取所有 .md 檔案
     with open(f"{folderPath}/{f}", "r", encoding="utf-8") as file:
         content = file.read()
 
-    with st.expander(f[:-3]):  # 使用expander，標題為檔案名稱去掉.md
+    with st.expander(f[:-3] + "課程筆記"):  # 使用expander，標題為檔案名稱去掉.md
         st.write(content)  # 將檔案內容顯示在網頁上
